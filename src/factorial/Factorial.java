@@ -20,7 +20,7 @@ public class Factorial {
     // факториал больших чисел
     private static String bigFactorial(int n) {
         BigInteger big = new BigInteger("1");
-        while (n > 0) {
+        while (n > 1) {
             big = big.multiply(new BigInteger(String.valueOf(n)));
             n = n -1;
         }
