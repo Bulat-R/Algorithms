@@ -41,10 +41,34 @@ public class BinarySearch {
                 return currentInd;
             } else if (arr[currentInd] > number) {
                 right = currentInd - 1;
-            } else if (arr[currentInd] < number) {
+            } else {
                 left = currentInd + 1;
             }
         }
         return -1;
+    }
+
+/*
+Дан упордоченный массив целых чисел.
+Напишите алгоритм, который за O(logN) проверит, есть ли в массиве число равное своему индексу
+ */
+    private static boolean isConditionTrue(int[] arr) {
+//        if (arr.length == 0) {
+//            return false;
+//        }
+//        int left = 0;
+//        int right = arr.length - 1;
+//        int index;
+//        while (left <= right) {
+//            index = (right - left) / 2;
+//            if (index == arr[index]) {
+//                return true;
+//            } else if (index > arr[index]) {
+//                right = index - 1;
+//            } else {
+//                left = index + 1;
+//            }
+//        }
+        return false;
     }
 }
